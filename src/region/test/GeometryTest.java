@@ -1,18 +1,19 @@
-package point.test;
+package region.test;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
-import point.geometry.*;
+import region.geometry.*;
 
-public class GeometryCreator {
-	
-	private static int scale = 500;
+public class GeometryTest {
+
+private static int scale = 500;
 	
 	private static String generate() {
 
 		String s = "";
 		
+		/*
 		Point b = new Point(0.5,0.5);
 		s += b.toSVG(scale,"green","B");
 		
@@ -28,7 +29,6 @@ public class GeometryCreator {
 		Circle c = new Circle(b,0.3);
 		s += c.toSVG(scale,"black");
 		
-		/*
 		Point pa = new Point(0.5,0.8);
 		Cone ca = new Cone(pa,Direction.south,(Math.PI/2*(1-0.7)));
 		s += pa.toSVG(scale,"green","A");
@@ -56,10 +56,6 @@ public class GeometryCreator {
 		
 		return s;
 		
-	}
-	
-	private static String caption(int scale, String text) {
-		return "<text x=\""+10+"\" y=\""+26+"\" fill=\"black\">"+text+"</text>";
 	}
 
 	public static void main(String[] args) {

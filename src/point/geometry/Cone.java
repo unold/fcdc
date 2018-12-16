@@ -1,4 +1,4 @@
-package geometry;
+package point.geometry;
 
 public class Cone {
 	

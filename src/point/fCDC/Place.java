@@ -1,8 +1,8 @@
-package fCDC;
+package point.fCDC;
 
 import java.util.ArrayList;
 
-import geometry.Polygon;
+import point.geometry.Polygon;
 
 public class Place {
 	

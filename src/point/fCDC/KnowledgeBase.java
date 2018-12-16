@@ -1,13 +1,13 @@
-package fCDC;
+package point.fCDC;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import geometry.Circle;
-import geometry.Cone;
-import geometry.Direction;
-import geometry.Point;
-import geometry.Polygon;
+import point.geometry.Circle;
+import point.geometry.Cone;
+import point.geometry.Direction;
+import point.geometry.Point;
+import point.geometry.Polygon;
 
 public class KnowledgeBase {
 	

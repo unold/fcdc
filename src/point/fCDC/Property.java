@@ -1,6 +1,6 @@
-package fCDC;
+package point.fCDC;
 
-import geometry.Direction;
+import point.geometry.Direction;
 
 public enum Property {
 	eastOf,

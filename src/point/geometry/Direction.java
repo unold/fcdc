@@ -1,4 +1,4 @@
-package geometry;
+package point.geometry;
 
 public enum Direction {
 	east,

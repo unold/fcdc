@@ -1,4 +1,4 @@
-package geometry;
+package point.geometry;
 
 import java.util.ArrayList;
 

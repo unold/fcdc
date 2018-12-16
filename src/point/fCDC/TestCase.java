@@ -1,4 +1,4 @@
-package fCDC;
+package point.fCDC;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -55,24 +55,22 @@ public class TestCase {
 	}
 	
 	public void printTTL(String filename) {
-		/*try (FileWriter writer = new FileWriter(filename)) {
+		try (FileWriter writer = new FileWriter(filename)) {
 			writer.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . \n");
 			writer.write("@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . \n");
 			writer.write("@prefix fcdc: <http://www.fuzzy-cardinal-direction-calculus.xyz#> . \n");
 			writer.write("@prefix higeomes: <http://www.higeomes.org#> . \n");
 			for (Place p : places) {
 				writer.write(p.getID()+" rdf:type fcdc:Place . \n");
-				if (p.isAbsolute()) {
-					writer.write(p.getID()+" fcdc:x \""+p.getX()+"\"^^xsd:double . \n");
-					writer.write(p.getID()+" fcdc:y \""+p.getY()+"\"^^xsd:double . \n");
-				}
+				writer.write(p.getID()+" fcdc:x \""+p.getX()+"\"^^xsd:double . \n");
+				writer.write(p.getID()+" fcdc:y \""+p.getY()+"\"^^xsd:double . \n");
 			}
 			for (Assertion a : assertions) {
 				writer.write(a.toTTL());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-		}*/
+		}
 	}
 	
 	public double avgDistance() {

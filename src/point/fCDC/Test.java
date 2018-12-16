@@ -1,4 +1,4 @@
-package fCDC;
+package point.fCDC;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,6 +8,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		TestCase test = new TestCase(100,0.01);
+		test.printTTL("test.TTL");
 		/*test.calculation(0.6,0.6,false,false);
 		test.printSVG("test0.svg",500);
 		test.calculation(0.6,0.6,false,true);

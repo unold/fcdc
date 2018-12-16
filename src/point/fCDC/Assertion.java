@@ -1,4 +1,4 @@
-package fCDC;
+package point.fCDC;
 
 public class Assertion {
 	
