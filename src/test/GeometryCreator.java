@@ -13,24 +13,46 @@ public class GeometryCreator {
 
 		String s = "";
 		
-		Point pa = new Point(0.5,0.2);
-		Cone ca = new Cone(pa,Direction.north,Math.tan(Math.PI/2*(1-0.8)));
+		Point b = new Point(0.5,0.5);
+		s += b.toSVG(scale,"green","B");
+		
+		Point a1 = new Point(0.7,0.5);
+		s += a1.toSVG(scale,"red","A?");
+		
+		Point a2 = new Point(0.3,0.6);
+		s += a2.toSVG(scale,"red","A?");
+		
+		Point a3 = new Point(0.4,0.3);
+		s += a3.toSVG(scale,"red","A?");
+		
+		Circle c = new Circle(b,0.3);
+		s += c.toSVG(scale,"black");
+		
+		/*
+		Point pa = new Point(0.5,0.8);
+		Cone ca = new Cone(pa,Direction.south,(Math.PI/2*(1-0.7)));
 		s += pa.toSVG(scale,"green","A");
 		s += ca.toSVG(scale,"black");
 		
-		Point pb = new Point(0.2,0.5);
-		Cone cb = new Cone(pb,Direction.east,Math.tan(Math.PI/2*(1-0.7)));
+		Point pb = new Point(0.8,0.5);
+		Cone cb = new Cone(pb,Direction.west,(Math.PI/2*(1-0.7)));
 		s += pb.toSVG(scale,"green","B");
 		s += cb.toSVG(scale,"black");
 		
-		Point q1 = new Point(0.5,0.4);
-		Point q2 = new Point(0.6,0.7);
+		Point pc = new Point(0.2,0.3);
+		Circle cc = new Circle(pc,-Math.log(0.75));
+		s += pc.toSVG(scale,"green","C");
+		s += cc.toSVG(scale,"black");
+		
 		Polygon g = new Polygon();
 		g.clip(ca);
 		g.clip(cb);
+		g.clip(cc);
 		s += g.toSVG(scale,"red");
+		
+		Point q1 = new Point(0.4,0.4);
 		s += q1.toSVG(scale,"red","P?");
-		s += q2.toSVG(scale,"red","P?");
+		*/
 		
 		return s;
 		

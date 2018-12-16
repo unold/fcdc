@@ -12,6 +12,12 @@ public class Cone {
 		this.angle = angle;
 	}
 	
+	public Cone(Point center, double dir, double angle) {
+		this.center = center;
+		this.dir = dir;
+		this.angle = angle;
+	}
+	
 	boolean clip(Point p, boolean side) {
 		double s = side ? 1 : -1;
 		double n = dir+s*(Math.PI/2-angle);

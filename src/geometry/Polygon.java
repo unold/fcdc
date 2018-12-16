@@ -63,19 +63,14 @@ public class Polygon {
 	}
 
 	public void clip(Circle circle) {
-		System.out.println(circle);
-		double r = Math.sqrt(2)*circle.r;
-		double x = circle.c.x;
-		double y = circle.c.y;
-		Cone c;
-		c = new Cone(new Point(x-r,y),Direction.north,Math.PI/4);
-		clip(c);
-		c = new Cone(new Point(x,y-r),Direction.east,Math.PI/4);
-		clip(c);
-		c = new Cone(new Point(x+r,y),Direction.south,Math.PI/4);
-		clip(c);
-		c = new Cone(new Point(x,y+r),Direction.west,Math.PI/4);
-		clip(c);
+		double step = Math.PI/32;
+		double r = -Math.log(0.75)/Math.cos(step);
+		double x = 0.2;
+		double y = 0.3;
+		for (double angle = 0; angle < 2*Math.PI; angle += 4*step) {
+			Cone c = new Cone(new Point(x-Math.cos(angle)*r,y-Math.sin(angle)*r),angle,Math.PI/2-step);
+			clip(c);
+		}
 	}
 	
 }

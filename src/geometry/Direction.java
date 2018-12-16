@@ -1,21 +1,21 @@
 package geometry;
 
 public enum Direction {
-	north,
 	east,
-	south,
-	west;
+	north,
+	west,
+	south;
 	
 	public double toRadians() {
 		switch(this) {
-		case north:
-			return Math.PI/2;
 		case east:
 			return 0;
-		case south:
-			return -Math.PI/2;
+		case north:
+			return Math.PI/2;
 		case west:
 			return Math.PI;
+		case south:
+			return 3*Math.PI/2;
 		default:
 			return 0;
 		}
