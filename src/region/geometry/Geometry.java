@@ -1,10 +1,12 @@
 package region.geometry;
 
-public interface Geometry {
+public abstract class Geometry {
+	
+	static int scale = 500;
 	
 	String color = "black";
 	String name = null;
 	
-	public String toString();
+	public abstract String toString();
 
 }
