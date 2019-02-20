@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 public class ModelImageGenerator {
 	
 	static int size = 1000;
-	static String filename = "idCont.png";
+	static String filename = "blank.png";
 
 	public static void main(String[] args) {
 		BufferedImage image = new BufferedImage(size, size, BufferedImage.TYPE_INT_RGB);

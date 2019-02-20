@@ -3,7 +3,7 @@ package point.test;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import point.geometry.*;
+import point.geometrybck.*;
 
 public class GeometryCreator {
 	
